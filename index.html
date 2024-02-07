@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    
 </head>
 
 <body>
     <div style="text-align: center;">
+        <h1>Login</h1>
         <input type="text" placeholder="Username">
         <input type="text" placeholder="Password">
         <div style="margin-top: 1rem;">
-            <button>Login</button>
+            <button id="buttonLogin" onclick="alert('You will be loged in')">Login</button>
         </div>
     </div>
 </body>
+<script>
+    console.log("Hello World");
+    // Declaring variable
+    // let / var
+    let btnLogin = document.querySelector("#buttonLogin");
+    btnLogin.onclick = function (){
+        alert('You will be loged in')
+    };
+</script>
 </html>
